@@ -37,11 +37,12 @@ function GuestRow({ guest }) {
     email,
     nationality,
     countryFlag,
+    guestImage,
   } = guest;
 
   return (
     <Table.Row>
-      <Img src={countryFlag} />
+      <Img src={guestImage} />
       <Guest>{fullName}</Guest>
       <div>{nationalID}</div>
       <div>{phone || "—"}</div>
